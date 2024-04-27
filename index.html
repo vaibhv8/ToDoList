@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List by GS FE270424Contest</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="heading">
+            <h1>To-Do List</h1>
+        </div>
+        <div class="addSection">
+            <input type="text" id="itemName" placeholder="Item Name">
+            <div id="deadline"><div id="dateText">Deadline</div><input type="date" id="calendar"></div>
+            <div id="priority">
+                Priority
+                <select id="selectPriority" name="priority">
+                    <option value="option" disabled selected style="display:none"></option>
+                    <option id="option1" name="priority" value="option1">High</option>
+                    <option id="option2" name="priority" value="option2">Medium</option>
+                    <option id="option3" name="priority" value="option3">Low</option>
+                </select>
+            </div>
+            <button class="btn">Add Item</button>
+        </div>
+        <h2>Today’s TodoList</h2>
+        <div class="today list">
+
+        </div>
+        <h2>Future TodoList</h2>
+        <div class="future list">
+
+        </div>
+        <h2>Completed TodoList</h2>
+        <div class="completed list">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
